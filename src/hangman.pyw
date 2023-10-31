@@ -57,7 +57,7 @@ while True:
     if perdio:    # Si perdio que reinicie la lista de palabras
 
         # Leo el json con la lista de palabras y lo meto en una nueva lista:
-        with open("data\words.json", "r") as file:
+        with open("data\words.json", "r", encoding="utf-8") as file:
             json_data = file.read()
 
         lista_palabras = json.loads(json_data)
